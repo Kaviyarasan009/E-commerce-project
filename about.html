@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ecommerce - About</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Ecommerce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <a class="btn btn-outline-secondary btn-sm" href="login.html">
+            <i class="bi bi-box-arrow-in-right me-1"></i> Login
+          </a>
+         <a class="btn btn-outline-secondary btn-sm" href="register.html">
+            <i class="bi bi-person-plus me-1"></i> Register
+          </a>
+          <a class="btn btn-outline-secondary btn-sm" href="cart.html">
+            <i class="bi bi-cart3 me-1"></i>
+            Cart (<span id="cart-count">0</span>)
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container">
+
+      <!-- About heading -->
+      <h2 class="text-center mb-3">About Us</h2>
+      <hr class="mb-4" />
+
+      <!-- Long paragraph -->
+      <p class="about-text text-center text-muted mx-auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facere
+        doloremque veritatis odit similique sequi. Odit amet fuga nam quam quasi
+        facilis sed doloremque saepe sint perspiciatis explicabo totam vero quas
+        provident ipsam, veritatis nostrum velit quos recusandae est mollitia
+        esse fugit dolore laudantium. Ex vel explicabo earum unde eligendi autem
+        praesentium, doloremque distinctio nesciunt porro tempore quis eaque
+        labore voluptatibus ea necessitatibus exercitationem tempora molestias.
+        Ad consequuntur veniam sequi ullam tempore vel tenetur soluta dolore
+        sunt maxime aliquam corporis est, quo saepe dolorem optio minus sint
+        nemo totam dolorum! Reprehenderit delectus expedita a alias nam
+        recusandae illo debitis repellat libero, quasi explicabo molestiae
+        saepe, dolorem tempore itaque eveniet quam dignissimos blanditiis
+        excepturi harum numquam vel nihil? Ipsum
+      </p>
+
+      <!-- Our products heading only; cards come from products page -->
+      <h3 class="text-center mt-5 mb-4">Our Products</h3>
+
+      <div class="row g-4 justify-content-center mb-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="images/pexels-photo-298863.jpeg" class="card-img-top" alt="Men's Clothing">
+            <div class="card-body text-center">
+              <h6 class="card-title mb-0">Men's Clothing</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="images/pexels-photo-7679720.jpeg" class="card-img-top" alt="Women's Clothing">
+            <div class="card-body text-center">
+              <h6 class="card-title mb-0">Women's Clothing</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="images/pexels-photo-1927259.webp" class="card-img-top" alt="Jewellery">
+            <div class="card-body text-center">
+              <h6 class="card-title mb-0">Jewellery</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="images/pexels-photo-356056.jpeg" class="card-img-top" alt="Electronics">
+            <div class="card-body text-center">
+              <h6 class="card-title mb-0">Electronics</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <p class="text-center small mt-3 mb-0">
+        Made with <span class="text-danger">♥</span> by kavi
+      </p>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

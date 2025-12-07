@@ -1,0 +1,27 @@
+.banner {
+  position: relative;
+  max-height: 520px;   
+  overflow: hidden;
+}
+
+.banner-img {
+  object-fit: cover;
+  height: 520px;       
+}
+
+.banner-caption {
+  position: absolute;
+  top: 30%;
+  left: 5%;                
+  transform: translateY(-50%);
+  text-align: left;    
+  color: white;    
+}
+
+.cat-img {
+  height: 180px;
+  object-fit: cover;
+}
+.card-img-top {
+  background: #fff;
+}
