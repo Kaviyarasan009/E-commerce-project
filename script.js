@@ -26,7 +26,28 @@ async function loadProducts() {
   renderCartPage();
 }
 
-
+function renderProducts(list) {
+  const grid = document.getElementById('product-grid');
+  if (!grid) return;
+  grid.innerHTML = list.map(p => `
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="${p.image}" class="card-img-top p-3"
+             style="height:220px;object-fit:contain" alt="${p.title}">
+        <div class="card-body d-flex flex-column">
+          <h6 class="card-title">${truncateTitle(p.title)}</h6>
+          <p class="card-text small text-muted flex-grow-1">${truncateDesc(p.description)}</p>
+          <p class="fw-bold mb-2">$${p.price}</p>
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-dark btn-sm w-50">Details</button>
+            <button class="btn btn-dark btn-sm w-50"
+                    onclick="addToCart(${p.id})">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
 
 function filterByCategory(cat) {
   if (cat === 'all') renderProducts(products);
